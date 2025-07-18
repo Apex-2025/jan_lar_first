@@ -39,6 +39,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
+                <div><a href="{{route('task.index')}}">Task list</a></div>
             </div>
         </div>
     </body>
