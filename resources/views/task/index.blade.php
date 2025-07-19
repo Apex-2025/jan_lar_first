@@ -35,7 +35,11 @@
                             </td>
 
                             <td>
-                                <!-- TODO: Кнопка Удалить -->
+                                <!-- Кнопка редагувати -->
+                                <a href="{{ route('task.edit', $task->id)  }}" class="btn btn-primary">
+                                    <i class="fa fa-pencil"></i>
+                                </a>
+                                <!-- Кнопка Удалить -->
                                 <form action="{{ route('task.destroy', $task->id) }}" method="post">
                                     {{csrf_field()}}
                                     {{ method_field('DELETE') }}
@@ -48,5 +52,4 @@
             </table>
         </div>
     </div>
-    <!-- TODO: Текущие задачи -->
 @endsection

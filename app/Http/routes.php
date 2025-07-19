@@ -13,6 +13,7 @@
 
 use App\Models\Task;
 use Illuminate\Http\Request;
+use App\Http\Controllers\TaskController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -50,4 +51,9 @@ Route::group(['prefix' => 'task'], function () {
         $task->delete();
         return redirect()->route('task.index');
     })->name('task.destroy');
+
+    Route::get('/{task}/edit', 'TaskController@edit')->name('task.edit');
+
+    Route::put('/{task}' , 'TaskController@update')->name('task.update');
+
 });
