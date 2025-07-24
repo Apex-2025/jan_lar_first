@@ -28,6 +28,8 @@
             </div>
 
         </nav>
+{{-- повідомлення про успіх --}}
+        @include('common.success')
     </div>
 
     @yield('content')

@@ -9,7 +9,7 @@
     </div>
     <div class="panel panel-default">
         <div class="panel-heading">
-            Tasks
+            <h4>Tasks:</h4>
         </div>
 
         <div class="panel-body">

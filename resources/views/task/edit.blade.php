@@ -5,7 +5,7 @@
     <!-- Bootstrap шаблон... -->
     <div class="panel panel-default">
         <div class="panel-heading">
-            Edit task: {{ $task->name }}
+            <span><h4>Edit task:</h4> {{ $task->name }}</span>
         </div>
 
         <div class="panel-body">
@@ -29,7 +29,7 @@
                 <!-- Кнопка редагування задачи -->
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-6">
-                        <button type="submit" class="btn btn-default">
+                        <button type="submit" class="btn btn-success">
                             <i class="fa fa-pencil"></i> Update task
                         </button>
                         <a href="{{ route('task.index') }}" class="btn btn-secondary">
